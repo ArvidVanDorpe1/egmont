@@ -218,6 +218,25 @@
     padding-top: 20px;
   }
   
+  .galabal {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+  }
+
+  .galabal_tekst{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+    gap: 0;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.6rem;
+    color: black;
+  }
+  .galabal_tekst a{
+    color: black;
+  }
+
   /* Media queries voor mobiele apparaten */
   @media (max-width: 768px) {
     #nav-list {
