@@ -1,0 +1,253 @@
+/* Algemene instellingen */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #222;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .container-nav {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #f2c400;
+    padding: 1.5rem 0; /* Ruimere padding voor meer ademruimte */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+    border-bottom: 10px solid rgb(4, 45, 78); /* Zwarte balk aan de onderkant */
+
+  }
+  
+  header .container-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Logo styling */
+  header .logo {
+    height: 170px;
+    order: 1; /* Logo rechts plaatsen */
+    margin-left: 5%;
+    margin-right: 10%;
+  }
+  
+  /* Header tekst styling */
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1b1b1b;
+    text-align: left;
+    flex-basis: 100%;
+    margin: 0;
+  }
+  
+  header .studentenclub {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+    color: #1b1b1b;
+  }
+  
+  header .moeder-egmont {
+    font-family: 'Noticia Text', serif;
+    font-size: 4.5rem; /* Iets kleinere fontgrootte voor evenwicht */
+    font-weight: 700;
+    margin: 0;
+    padding-top: 0;
+    margin-left: 50px;
+    margin-top: -10px;
+    color: rgb(4, 45, 78);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Schaduw effect voor diepte */
+    line-height: 1.1;
+  }
+  
+  /* Navigatie styling */
+  nav {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: -30px;
+  }
+  
+  #nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    font-size: 1.1rem; /* Grotere font voor de navigatie */
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  #nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    background-color: rgb(4, 45, 78);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    border-top-left-radius: 12px; /* Rounds the top left corner */
+  border-top-right-radius: 12px; /* Rounds the top right corner */
+    
+  }
+  
+  #nav-list li a:hover {
+    color: #f2c400;
+    background-color: #0057a0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    border-top-left-radius: 12px; /* Rounds the top left corner */
+  border-top-right-radius: 12px; /* Rounds the top right corner */
+  }
+  
+  /* Main content styling */
+  main {
+    padding: 2rem 0;
+    background-color: #fff;
+  }
+  .welcome,
+.foto {
+  flex: 1; /* Zorgt ervoor dat de secties gelijkmatig worden verdeeld */
+  margin: 1rem;
+}
+  
+  .welcome h2 {
+    font-size: 2rem;
+    color: rgb(4, 45, 78);
+    margin-bottom: 1rem;
+  }
+  
+  .welcome p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    max-width: 800px;
+  }
+  
+  .foto {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .group-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Socials styling */
+  .socials {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .socials img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s;
+  }
+  
+  .socials img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+
+  .semester {
+    padding-left: 40%;
+  }
+
+  .datum_container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .datum_nadoop{
+    margin-right: 30%;
+  }
+  .doop_fotos{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .doop_fotos img{
+    height: 190px;
+  }
+  .doop_titel {
+    color: rgb(4, 45, 78);
+  }
+
+  .doop_tekst {
+    padding-top: 20px;
+  }
+  
+  /* Media queries voor mobiele apparaten */
+  @media (max-width: 768px) {
+    #nav-list {
+      flex-direction: column;
+      background: #f2c400;
+      position: absolute;
+      right: 0;
+      top: 60px;
+      width: 200px;
+      display: none;
+      padding: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+  
+    #nav-list.show {
+      display: flex;
+    }
+  
+    #menu-toggle {
+      display: block;
+    }
+  
+    header .logo {
+      margin-left: 0; /* Logo goed centreren bij kleine schermen */
+      margin-right: 0;
+      height: 100px; /* Kleinere logo bij kleine schermen */
+    }
+  
+    header h1 {
+      font-size: 2rem; /* Kleinere header tekst bij mobiel */
+    }
+  }
+  
