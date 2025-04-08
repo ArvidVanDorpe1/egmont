@@ -281,6 +281,48 @@ h3 {
   color: #777; /* Iets lichtere kleur voor de bijnaam */
 }
 
+.history-grid {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+/* Voor elk item in de grid */
+.history-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Drie kolommen voor jaar, naam, clubnaam en foto */
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  gap: 20%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Zorg voor een nette lay-out van de jaar-, naam- en clubnaam kolommen */
+.year {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0057a0;
+  text-align: center;
+}
+
+.name_pro {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+.club-name_pro {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777;
+  text-align: center;
+}
+
+
+
 
   /* Media queries voor mobiele apparaten */
   @media (max-width: 768px) {
