@@ -375,40 +375,177 @@ justify-content: center;
 }
 
 
+.liedtekst {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+}
+
+.geschiedenis-tekst1 {
+  display: flex;
+  padding-top: 20px;
+  
+}
+
+.geschiedenis-tekst1 img{
+  padding: 50px;
+}
+.statutentekst p{
+  font-weight: bolder;
+  font-style: oblique;
+}
+
+.tabbed {
+  padding-left: 50px;
+}
+
+.statutentekst{
+  width: 50%;
+  font-size: small;
+}
+.statutentekst h1{
+  font-size: 2rem;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: rgb(4, 45, 78);
+  color: white;
+  border-radius: 8px;
+  margin: 1rem auto;
+  text-align: center;
+  width: fit-content;
+}
 
 
 
 
-  /* Media queries voor mobiele apparaten */
-  @media (max-width: 768px) {
-    #nav-list {
-      flex-direction: column;
-      background: #f2c400;
-      position: absolute;
-      right: 0;
-      top: 60px;
-      width: 200px;
-      display: none;
-      padding: 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-  
-    #nav-list.show {
-      display: flex;
-    }
-  
-    #menu-toggle {
-      display: block;
-    }
-  
-    header .logo {
-      margin-left: 0; /* Logo goed centreren bij kleine schermen */
-      margin-right: 0;
-      height: 100px; /* Kleinere logo bij kleine schermen */
-    }
-  
-    header h1 {
-      font-size: 2rem; /* Kleinere header tekst bij mobiel */
-    }
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
   }
-  
+
+  #nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(4, 45, 78);
+    padding: 1rem 0;
+    border-radius: 0 0 12px 12px;
+  }
+  /* Fix dropdown styling op mobiel */
+  .dropdown:hover .dropdown-menu {
+    position: relative;
+  }
+
+  /* Wanneer menu open is (checkbox checked) */
+  #menu-toggle:checked + .hamburger + #nav-list {
+    display: flex;
+  }
+
+  /* Fix dropdown styling op mobiel */
+  .dropdown:hover .dropdown-menu {
+    position: relative;
+  }
+
+  header .container-nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header .logo {
+    height: 120px;
+    margin: 0;
+    order: 0;
+  }
+
+  header .moeder-egmont {
+    font-size: 3rem;
+    margin-left: 0;
+  }
+
+  #nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+  }
+
+  .welcome,
+  .foto {
+    flex: 1 1 100%;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .doop_fotos {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap: 1rem;
+  }
+
+  .doop_fotos img {
+    width: 80%;
+    height: auto;
+  }
+
+  .galabal_tekst {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .board-members {
+    grid-template-columns: 1fr;
+  }
+
+  .history-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .datum_container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .datum_nadoop,
+  .semester {
+    margin: 0;
+    padding: 0;
+  }
+
+  .sponsor-logos {
+    grid-template-columns: 1fr;
+  }
+
+  .geschiedenis-tekst1 {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .geschiedenis-tekst1 img {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .statutentekst {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .tabbed {
+    padding-left: 1rem;
+  }
+}
