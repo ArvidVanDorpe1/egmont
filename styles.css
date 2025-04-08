@@ -126,6 +126,45 @@
     border-top-left-radius: 12px; /* Rounds the top left corner */
   border-top-right-radius: 12px; /* Rounds the top right corner */
   }
+
+  /* Stijl voor het dropdown-menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -10;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px 0;
+  margin-left: -50%;
+}
+
+.dropdown-menu li {
+  padding: 8px;
+  margin-left: 0;
+}
+
+.dropdown-menu li a {
+  color: black;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.dropdown-menu li a:hover{
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
   
   /* Main content styling */
   main {
