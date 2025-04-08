@@ -30,7 +30,6 @@
   header {
     background-color: #f2c400;
     padding: 1.5rem 0; /* Ruimere padding voor meer ademruimte */
-    position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
