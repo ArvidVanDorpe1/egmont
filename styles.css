@@ -321,6 +321,23 @@ justify-content: center;
   text-align: center;
 }
 
+.sponsor-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create a responsive grid with minimum column width */
+  gap: 1rem; /* Add some space between the logos */
+  justify-items: center; /* Center the items within each grid cell */
+}
+
+.sponsor-logo img {
+  max-width: 100%; /* Make sure images scale to the container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra spacing around images */
+  object-fit: contain; /* Ensure images are contained within their div */
+  border-radius: 8px; /* Optional: add rounded corners to logos */
+}
+
+
+
 
 
 
