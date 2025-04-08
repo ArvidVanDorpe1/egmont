@@ -462,6 +462,7 @@ justify-content: center;
     text-align: center;
   }
 
+
   header .logo {
     height: 120px;
     margin: 0;
@@ -548,4 +549,28 @@ justify-content: center;
   .tabbed {
     padding-left: 1rem;
   }
+
+  .maand {
+    width: auto;
+  }
+
+  .maand img {
+    width: 100%;
+  }
+
+  .semester img {
+    width: 100%;
+  }
+
+  .galabal img{
+    width: 100%;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5%;
+  }
+
 }
